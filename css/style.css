@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    border: 1px #eaeaea solid;
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_title {
+    padding: 5px 0;
+    margin: 0;
+}
+
+form {
+    padding: 10px;
+    text-align: center;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+.btn {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.button19 {
+    display: inline-block;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    user-select: none;
+    padding: .7em 1.5em;
+    border: 1px solid rgb(80, 32, 0);
+    border-radius: 5px;
+    outline: none;
+    background: #4FD1C5 linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+    box-shadow:
+        0 3px 5px #4FD1C5,
+        0 3px 15px rgba(0, 0, 0, .4),
+        inset 0 1px rgba(255, 255, 255, .3),
+        inset 0 0 3px rgba(255, 255, 255, .5);
+    transition: .2s;
+}
+
+.button19:hover {
+    background: #4FD1C5 linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 40%);
+}
+
+.button19:active {
+    background: #4FD1C5 linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 40%);
+    box-shadow:
+        0 2px #4FD1C5,
+        0 1px 6px rgba(0, 0, 0, .4),
+        inset 0 1px rgba(255, 255, 255, .3),
+        inset 0 0 3px rgba(255, 255, 255, .5);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 20px;
+    }
+    input, select {
+        font-size: 15px;
+    }
+}
