@@ -78,7 +78,7 @@ function calcProfit(invest, percent, countDay, lv) {
     day = +document.getElementById('count-day').value;
     let deposito = +invest;
     for (let i = 0; i < +day; i++) {
-        dayRes = (deposito * ((percent * 1) / 100)) / 2;
+        dayRes = (deposito * ((percent * 1) / 100));
         deposito = (deposito + dayRes);
     }
     formCount.value = deposito.toFixed(2);
