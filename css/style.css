@@ -59,9 +59,9 @@ input, select {
     border: 1px solid rgb(80, 32, 0);
     border-radius: 5px;
     outline: none;
-    background: #4FD1C5 linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+    background: #FFE600;
     box-shadow:
-        0 3px 5px #4FD1C5,
+        0 3px 5px #5e5a3d,
         0 3px 15px rgba(0, 0, 0, .4),
         inset 0 1px rgba(255, 255, 255, .3),
         inset 0 0 3px rgba(255, 255, 255, .5);
@@ -69,17 +69,10 @@ input, select {
 }
 
 .button19:hover {
-    background: #4FD1C5 linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 40%);
+    background: #FFE600;
 }
 
 .button19:active {
-    background: #4FD1C5 linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 40%);
-    box-shadow:
-        0 2px #4FD1C5,
-        0 1px 6px rgba(0, 0, 0, .4),
-        inset 0 1px rgba(255, 255, 255, .3),
-        inset 0 0 3px rgba(255, 255, 255, .5);
-    -webkit-transform: translate(0, 4px);
     transform: translate(0, 4px);
 }
 
