@@ -111,7 +111,7 @@ function Otris(day, prec, prof, total) {
 function closeBtn() {
     inputCalc.removeAttribute("disabled");
     reset.style.display = 'none';
-    formCount.value = 1000;
+    formCount.value = 500;
     popka.innerHTML = '';
     po.style.display = 'none';
     countDay = 150;
