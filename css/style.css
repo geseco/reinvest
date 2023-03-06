@@ -18,11 +18,15 @@ input::-webkit-inner-spin-button {
 }
 
 .wrapper {
-    height: 100vh;
+    margin-top: 50px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+h2 {
+    margin-top: 0px;
 }
 
 .form_title {
@@ -49,33 +53,81 @@ input, select {
     border-radius: 5px;
 }
 
-.button19 {
-    display: inline-block;
-    font-weight: bold;
-    color: #000000;
-    text-decoration: none;
-    user-select: none;
-    padding: .7em 1.5em;
-    border: 1px solid rgb(80, 32, 0);
-    border-radius: 5px;
-    outline: none;
-    background: #FFE600;
-    box-shadow:
-        0 3px 5px #5e5a3d,
-        0 3px 15px rgba(0, 0, 0, .4),
-        inset 0 1px rgba(255, 255, 255, .3),
-        inset 0 0 3px rgba(255, 255, 255, .5);
-    transition: .2s;
+.btn {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin: 0 15px 15px 0;
+	outline: none;
+	border: none;  
+	border-radius: 6px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 17px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #385898;
+	background-color: #e7f3ff;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;
+}
+.btn:focus-visible {
+	box-shadow: 0 0 0 2px #666;
+}
+.btn:hover {
+	background-color: #DBE7F2;
+}
+.btn:active {
+	transform: scale(0.96);
+}
+.btn:disabled {
+	pointer-events: none;
+	opacity: 0.65;
 }
 
-.button19:hover {
-    background: #FFE600;
-}
 
-.button19:active {
-    transform: translate(0, 4px);
+.table {
+	width: 100%;
+	margin-bottom: 20px;
+	border: 5px solid #fff;
+	border-top: 5px solid #fff;
+	border-bottom: 3px solid #fff;
+	border-collapse: collapse; 
+	outline: 3px solid #ffd300;
+	font-size: 15px;
+	background: #fff!important;
 }
-
+.table th {
+	font-weight: bold;
+	padding: 7px;
+	background: #ffd300;
+	border: none;
+	text-align: left;
+	font-size: 15px;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #ffd300;
+    border-right: 1px solid #000000;
+}
+.table td {
+	padding: 7px;
+    text-align: center;
+	border: none;
+	border-top: 3px solid #fff;
+	border-bottom: 3px solid #fff;
+    border-right: 1px solid #000000;
+	font-size: 15px;
+}
+.table tbody tr:nth-child(even){
+	background: #f8f8f8!important;
+}
+.table {
+    display: none;
+}
+#reset {
+    display: none;
+}
 @media only screen and (max-width: 600px) {
     body {
         font-size: 20px;
