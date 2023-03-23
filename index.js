@@ -119,12 +119,18 @@ function calcProfit(invest, percent) {
     }
     formCount.value = deposito.toFixed(2);
 }
-
+let wordDay = '';
 function Otris(day, prec, prof, total) {
+    
+    if(day === 1) {
+        wordDay = "day";
+    } else {
+        wordDay = "days";
+    }
     popka.innerHTML +=
         `
         <tr>
-            <td>${day}</td>
+            <td>${day} ${wordDay}</td>
                 <td>${prec}<span>%</span></td>
                 <td><span>$</span>${prof}</td>
                 <td><span>$</span>${total}</td>
